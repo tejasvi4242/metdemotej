@@ -1,0 +1,444 @@
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git
+$ git --version
+git version 2.35.1.windows.2
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git
+$ git init
+Initialized empty Git repository in C:/Git/.git/
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contact.htm
+        index.htm
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git config --global user.email "tejasvibhalsing4242@gmail.com"
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git config --global user.name "tejasvi4242"
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=tejasvibhalsing4242@gmail.com
+user.name=tejasvi4242
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=tejasvibhalsing4242@gmail.com
+user.name=tejasvi4242
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git add contact.htm
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   contact.htm
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.htm
+
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git add *
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git rm --cached contact.htm
+rm 'contact.htm'
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git add *
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git add -A
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   contact.htm
+        new file:   index.htm
+
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git commit
+[master (root-commit) e4cb471] Initial Commit
+ 2 files changed, 18 insertions(+)
+ create mode 100644 contact.htm
+ create mode 100644 index.htm
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git log
+commit e4cb4716fd1ea1dd060476adefe8409c92dca471 (HEAD -> master)
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 10:38:08 2022 +0530
+
+    Initial Commit
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ ^C
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ ^C
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git add -A
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Images/img1.jpg
+        modified:   index.htm
+
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git log
+commit e4cb4716fd1ea1dd060476adefe8409c92dca471 (HEAD -> master)
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 10:38:08 2022 +0530
+
+    Initial Commit
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git commit -m "Changes in contact"
+[master 29953fa] Changes in contact
+ 2 files changed, 1 insertion(+)
+ create mode 100644 Images/img1.jpg
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git log
+commit 29953fad01f1d0f6fd6433ce34282be596a59ea7 (HEAD -> master)
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 11:10:35 2022 +0530
+
+    Changes in contact
+
+commit e4cb4716fd1ea1dd060476adefe8409c92dca471
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 10:38:08 2022 +0530
+
+    Initial Commit
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git git add -A
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git reset
+Unstaged changes after reset:
+M       contact.htm
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git log
+commit 29953fad01f1d0f6fd6433ce34282be596a59ea7 (HEAD -> master)
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 11:10:35 2022 +0530
+
+    Changes in contact
+
+commit e4cb4716fd1ea1dd060476adefe8409c92dca471
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 10:38:08 2022 +0530
+
+    Initial Commit
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git reset ^C
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git reset ^[[200~e4cb4716fd1ea1dd060476adefe8409c92dca471
+Unstaged changes after reset:
+M       contact.htm
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git log
+commit 29953fad01f1d0f6fd6433ce34282be596a59ea7 (HEAD -> master)
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 11:10:35 2022 +0530
+
+    Changes in contact
+
+commit e4cb4716fd1ea1dd060476adefe8409c92dca471
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 10:38:08 2022 +0530
+
+    Initial Commit
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git add *
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git commit -m "contact file reuploaded"
+[master fda2385] contact file reuploaded
+ 1 file changed, 1 insertion(+)
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git log
+commit fda2385c0ff49b69f72f80e96ab039f890ce94f5 (HEAD -> master)
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 11:14:40 2022 +0530
+
+    contact file reuploaded
+
+commit 29953fad01f1d0f6fd6433ce34282be596a59ea7
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 11:10:35 2022 +0530
+
+    Changes in contact
+
+commit e4cb4716fd1ea1dd060476adefe8409c92dca471
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 10:38:08 2022 +0530
+
+    Initial Commit
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git reset
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ ^C
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git reset --hard e4cb4716fd1ea1dd060476adefe8409c92dca471
+HEAD is now at e4cb471 Initial Commit
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git log
+commit e4cb4716fd1ea1dd060476adefe8409c92dca471 (HEAD -> master)
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 10:38:08 2022 +0530
+
+    Initial Commit
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git show
+commit e4cb4716fd1ea1dd060476adefe8409c92dca471 (HEAD -> master)
+Author: tejasvi4242 <tejasvibhalsing4242@gmail.com>
+Date:   Sat Feb 19 10:38:08 2022 +0530
+
+    Initial Commit
+
+diff --git a/contact.htm b/contact.htm
+new file mode 100644
+index 0000000..bef6246
+--- /dev/null
++++ b/contact.htm
+@@ -0,0 +1,9 @@
++<html>
++<head>
++<title>
++Git Demo
++</title>
++<body>
++<h1>I am doing Git</h1>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/index.htm b/index.htm
+new file mode 100644
+index 0000000..47dea9c
+--- /dev/null
++++ b/index.htm
+@@ -0,0 +1,9 @@
++<html>
++<head>
++<title>
++Git Demo
++</title>
++<body>
++<h1>I am doing Github</h1>
++</body>
++</html>
+\ No newline at end of file
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git diff
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git diff --staged
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ ^C
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git diff e4cb4716fd1ea1dd060476adefe8409c92dca471
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+
+
+
+
+ git remote add origin https://github.com/tejasvi4242/metdemotej.git
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 400 bytes | 400.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/tejasvi4242/metdemotej.git
+ * [new branch]      master -> master
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git push origin master
+Everything up-to-date
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git push origin master -f
+Everything up-to-date
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git init
+Reinitialized existing Git repository in C:/Git/.git/
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git remote -v
+origin  https://github.com/tejasvi4242/metdemotej.git (fetch)
+origin  https://github.com/tejasvi4242/metdemotej.git (push)
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git remote add origin https://github.com/tejasvi4242/metdemotej.git
+error: remote origin already exists.
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ get pull origin master -f
+bash: get: command not found
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git clone https://github.com/tejasvi4242/metdemotej.git
+Cloning into 'metdemotej'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git (master)
+$ git remote -v
+
+
+
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (master)
+$ git init
+Reinitialized existing Git repository in C:/Git/metdemotej/.git/
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (master)
+$ git remote -v
+origin  https://github.com/tejasvi4242/metdemotej.git (fetch)
+origin  https://github.com/tejasvi4242/metdemotej.git (push)
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (master)
+$ git pull origin master -f
+From https://github.com/tejasvi4242/metdemotej
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (master)
+$ git remote -v
+origin  https://github.com/tejasvi4242/metdemotej.git (fetch)
+origin  https://github.com/tejasvi4242/metdemotej.git (push)
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (master)
+$ git branch test
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (master)
+$ git checkout test
+Switched to branch 'test'
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (test)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (master)
+$ git branch -d test
+Deleted branch test (was e4cb471).
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (master)
+$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (hotfix)
+$ git status
+On branch hotfix
+nothing to commit, working tree clean
+
+Yuvraj@LAPTOP-LA05JALF MINGW64 /c/Git/metdemotej (hotfix)
+$
+
+
